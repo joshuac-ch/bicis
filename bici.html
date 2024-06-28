@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            .logo img{
+                width: 50px;
+            }
+            & li{
+                
+                padding: 0px 20px;
+                list-style: none;
+                & .oulet{
+                    margin-left: 10px;
+                    padding: 5px 20px;
+                    color: white;
+                    border: 2px solid rebeccapurple;
+                    background-color: rebeccapurple;
+                    border-radius: 10px;
+                }
+            }
+        }
+        main{
+            ul{
+                margin: 30px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                li:first-child{
+                    
+                     color: gray;   
+                }
+            }
+            .banner{
+                position: relative;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                & img{
+                width:1350px;
+                height:350px;
+            }
+                & .titulo{
+                    position: absolute;
+                    top: 35%;
+                    color: white;
+                    font-weight: bold;
+                }
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="conteinder">
+        <ul>
+            <li class="logo"><img src="logo_1998.jpg" alt=""></li>
+            <li>Bicicletas <i class='bx bx-chevron-right'></i></li>
+            <li>Fitnes <i class='bx bx-chevron-right'></i></li>
+            <li>Electricas <i class='bx bx-chevron-right'></i></li>
+            <li>Accesorios <i class='bx bx-chevron-right'></i></li>
+            <li>Venta Empresas <button class="oulet">Oulet</button></li>
+            <li>Servicios al cliente <i class='bx bx-chevron-right'></i></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <main>
+        <ul>
+            <li>Inicio<i class='bx bx-chevron-right'></i></li>
+            <li>Bicicletas</li>
+        </ul>
+        <div class="banner">
+            <img src="https://forriders.es/wp-content/uploads/2022/04/blog_prendas_verano.jpg" alt="">
+            <div class="titulo">
+                <h1>Bicicletas</h1>
+            </div>
+        </div>
+    </main>    
+       
+    
+</body>
+</html>
