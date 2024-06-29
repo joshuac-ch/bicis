@@ -1,4 +1,6 @@
-import matplotlib.pyplot as plt
+#me gutas la matematica
+import matplotlib.pyplot as p
+lt
 import numpy as np
 
 # Definimos los colores
