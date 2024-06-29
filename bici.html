@@ -53,21 +53,33 @@
                 }
             }
             .banner{
+                width: 200%;
                 position: relative;
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
+               
                 & img{
                 width:1350px;
-                height:350px;
+                height: 400px;
+                
             }
                 & .titulo{
                     position: absolute;
-                    top: 35%;
+                    top: 50%;
+                    left: 25%;
                     color: white;
                     font-weight: bold;
                 }
         }
+            .botones{
+                text-align: center;
+                font-size: 25px;
+                .act{
+                    color: purple;
+                    transition: all .5s ease;
+                }
+            }
         }
         .contenedor-principal{
             margin: 50px 0px;
@@ -137,9 +149,15 @@
         </ul>
         <div class="banner">
             <img src="https://forriders.es/wp-content/uploads/2022/04/blog_prendas_verano.jpg" alt="">
+            <img src="https://actimax.com.co/wp-content/uploads/2022/05/gran-fondo-en-cilcismo-1536x850.jpg" alt="">
             <div class="titulo">
                 <h1>Bicicletas</h1>
             </div>
+            
+        </div>
+        <div class="botones">
+            <i class='bx act bxs-bowl-rice'></i>
+            <i class='bx act bxs-bowl-rice'></i>
         </div>
     </main>
     <div class="contenedor-principal">
@@ -270,7 +288,19 @@
             </div>
         </div>
     </div>    
-       
+      <script>
+        let banner=document.querySelector(".banner");
+        let botones=document.querySelectorAll(".bxs-bowl-rice")
+        let btn=document.getElementById("e")
+            botones.forEach((cadaboton,i)=>{
+            botones[i].addEventListener("click",function(){{
+                let operacion=i*-50;
+                banner.style.translate=`${operacion}%` 
+                botones[i].forEach()
+                
+            }})
+        })
+      </script> 
     
 </body>
 </html>
