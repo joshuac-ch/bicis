@@ -10,8 +10,11 @@
         *{
             padding: 0;
             margin: 0;
+        }.conteiner{
+            margin-top: 30px;
         }
         ul{
+            
             display: flex;
             align-items: center;
             justify-content: center;
@@ -20,16 +23,21 @@
                 width: 50px;
             }
             & li{
-                
+                cursor: pointer;
                 padding: 0px 20px;
                 list-style: none;
                 & .oulet{
+                    cursor: pointer;
                     margin-left: 10px;
                     padding: 5px 20px;
                     color: white;
                     border: 2px solid rebeccapurple;
                     background-color: rebeccapurple;
                     border-radius: 10px;
+                }& .oulet:hover{
+                    background-color: white;
+                    color: rebeccapurple;
+                    transition: all .5s ease;
                 }
             }
         }
@@ -98,11 +106,18 @@
                 }
             }
             }
+            .item:hover{
+                
+                & img:hover{
+                    transition: all .5s ease;
+                    border: 2px solid purple;
+                }               
+            }
         }
     </style>
 </head>
 <body>
-    <div class="conteinder">
+    <div class="conteiner">
         <ul>
             <li class="logo"><img src="logo_1998.jpg" alt=""></li>
             <li>Bicicletas <i class='bx bx-chevron-right'></i></li>
