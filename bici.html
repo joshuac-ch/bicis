@@ -42,6 +42,7 @@
             }
         }
         main{
+            overflow: hidden;
             ul{
                 margin: 30px;
                 display: flex;
@@ -58,7 +59,7 @@
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
-               
+                transition: all 2s ease;
                 & img{
                 width:1350px;
                 height: 400px;
@@ -74,7 +75,7 @@
         }
             .botones{
                 text-align: center;
-                font-size: 25px;
+                font-size: 15px;
                 .act{
                     color: purple;
                     transition: all .5s ease;
@@ -156,8 +157,9 @@
             
         </div>
         <div class="botones">
-            <i class='bx act bxs-bowl-rice'></i>
-            <i class='bx act bxs-bowl-rice'></i>
+            <i class='bx bxs-circle'></i>
+            <i class='bx  bxs-circle'></i>
+            
         </div>
     </main>
     <div class="contenedor-principal">
@@ -290,13 +292,16 @@
     </div>    
       <script>
         let banner=document.querySelector(".banner");
-        let botones=document.querySelectorAll(".bxs-bowl-rice")
+        let botones=document.querySelectorAll(".bxs-circle")
         let btn=document.getElementById("e")
             botones.forEach((cadaboton,i)=>{
             botones[i].addEventListener("click",function(){{
                 let operacion=i*-50;
                 banner.style.translate=`${operacion}%` 
-                botones[i].forEach()
+                botones.forEach((cadaboton,i)=>{
+                    botones[i].classList.remove("act")
+                })
+                botones[i].classList.add("act")
                 
             }})
         })
